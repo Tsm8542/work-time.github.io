@@ -1,0 +1,87 @@
+/*styling the html font and background color*/
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: grey;
+}
+/*styling the buttons*/
+button{
+    padding: 5px;
+    font-size: larger;
+    color: rgb(0,110,255);
+    background-color: black;
+    border: none;
+    margin: 5px;
+    width: auto;
+    height: 40px;
+    border-radius: 25px;
+    border: 2px solid red;
+    cursor: pointer;
+}
+/*styling the placeholders*/
+#in-topic::placeholder,#in-property::placeholder,#in-value::placeholder{
+    color: rgb(0,110,255);
+    opacity: 0.8;
+}
+/*styling the input text fields*/
+#in-topic,#in-property,#in-value{
+    color: rgb(0,110,255);
+    background-color: black;
+    border: 2.5px solid yellow;
+    font-size: larger;
+    padding: 10px;
+    height: 20px;
+    width: 250px;
+    border-radius: 10px;
+}
+/*styling to display inline buttons*/
+#in-property,#in-value{
+    display: inline;
+}
+/*styling the table*/
+#work-area{
+    width: 100%;
+}
+/*styling the header or project name*/
+.topic{
+    text-align: center;
+    font-size: xx-large;
+}
+/*styling the preview that can be seen down*/
+.preview{
+    background-color: black;
+    border: 1px solid yellow;
+    color: rgb(0,110,255);
+    height: auto;
+}
+/*styling the preview word*/
+#preview{
+    font-size: xx-large;
+    text-align: center;
+    background-color: yellow;
+}
+/*styling the cells in the preview*/
+#work-area tr td{
+    padding: 10px;
+    width: 50%;
+    font-size: x-large;
+    border: 1px solid red;
+}
+
+/*styling media for printing the documents*/
+@media print{
+    .input-area,#preview{
+        display: none;
+    }
+    .preview{
+        background-color: black;
+        border: 1px solid black;
+        color: black;
+        height: auto;
+    }
+    #work-area tr td{
+        padding: 10px;
+        width: 50%;
+        font-size: x-large;
+        border: 1px solid black;
+    }
+}

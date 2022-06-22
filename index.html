@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<!--Header info goes here-->
+<head>
+    <title>Work-time</title>
+</head>
+<!--Linking stylesheets and scripts-->
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+<!--Body goes here-->
+<body>
+    <!--Input area where input fields are given-->
+    <div class="input-area">
+        <!--Input field for the project name only-->
+        <div class="in-title">
+            <!--Taking the name of the project as input-->
+            <input type="text" id="in-topic"    placeholder="Project name goes here..." autofocus required>
+            <!--Button to save the input in the document-->
+            <button onclick="h()">Save</button>
+        </div>
+        <!--Input field for the property value pairs to be taken as input for the document-->
+        <div class="pv">
+            <!--Input for the property and its respective value-->
+            <input type="text" id="in-property" placeholder="Property" required>
+            <input type="text" id="in-value" placeholder="Value" required>
+            <!--Button to add the provided property-->
+            <button onclick="addpv()">Add Property</button>
+        </div>
+        <!--Print button to export the document as per the preview in work area-->
+        <button id="print-btn" onclick="p()">Print(No formatting)</button>
+    </div>
+    <!--Preview heading given here-->
+    <div id="preview">&downarrow;Preview&downarrow;</div>
+    <!--Preview of the prepared documents is shown below.....-->
+    <div class="preview">
+        <!--Document prepared in a table like a fact file-->
+        <table id="work-area">
+            <!--Project name preview will be shown here...-->
+            <header class="topic">Project Name here...<br>Property value pairs goes here...
+            </header>
+        </table>
+    </div>
+</body>
+</html>
