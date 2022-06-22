@@ -27,3 +27,11 @@ function h(){
 function p(){
     window.print()
 }
+
+//event listener added in order to confirm before leaving the site unsaved or before unsaved work is printed or exported
+window.addEventListener("beforeunload", function (e) {
+    var confirmationMessage = "";
+
+    (e || window.event).returnValue = confirmationMessage;
+    return confirmationMessage;
+});
